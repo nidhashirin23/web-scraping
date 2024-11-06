@@ -1,0 +1,86 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script>
+        function showmessage(){
+            alert("successfully registered!");
+        }
+    </script>
+</head>
+<style>
+    .background {
+        background-image: url('pexels-photo-2310713.webp');
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        border: 1px solid black;
+        margin-bottom: 0%;
+    
+    }
+    .border{
+        border: 2px solid black;
+        padding-left: 10cm;
+        padding-bottom: 5px;
+        padding-right: 10px;
+        padding-top: 2px;
+        padding: 5px;
+        width: 10cm;
+        margin-top: 3cm;
+        margin-bottom: 5cm;
+        margin-left: 14cm;
+        margin-right: 5cm;
+    }
+</style>
+<body>
+
+    <div style="text-align: center;" class="background">
+     <div class="border">   
+    <h1 id="header">CLASS REGISTRATION</h1>
+    <script>
+        document.getElementById("header").style.color="red";
+    </script>
+    <label><i><b> Fill Out The Form Carefully For Registration</b></i> </label><br><br>
+    <form>
+    <label><b>First name:</b></label><br>
+    <input type="text" placeholder="first name" required><br><br>
+    <label><b>Middle name:</b><label><br>
+    <input type="text" placeholder="middle name" required><br><br>
+    <label><b>Last name:</b></label><br>
+    <input type="text" placeholder="last name" required>
+    <h3>Address:</h3>
+    <textarea id="address" name="address" required></textarea><br><br> 
+     <label><b>Student email:</b></label>
+    <input type="email" placeholder="name@gmail.com" required><br><br>
+    <label><b>Phone:</b></label>
+    <select>
+        <option value="default">+91</option>
+    </select>
+    <input type="tel" required><br><br>
+    <label><b>Gender:</b></label>
+    <select  >
+        <option value="default">select</option>
+        <option value="male">male</option>
+        <option value="female">female</option>
+     </select>
+    <label><b>Course:</b></label>
+    <select>
+        <option value="default">select</option>
+        <option value="BA">BA</option>
+        <option value="B COM">B COM</option>
+        <option value="BBA">BBA</option>
+        <option value="BSC">BSC</option>
+    </select><br><br>
+    <button onclick="showmessage()">Submit</button>
+    <button>reset</button>
+    </div>
+    </div>
+    </form>
+     <!-- <h1 tag="data">reset</h1>
+    <script>
+        document.getElementsByTagName("h1")[0].innerHTML="heelo";
+    </script> -->
+</body>
+</html>
